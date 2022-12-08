@@ -2,22 +2,7 @@
 Dog objects
 */
 
-class Dog {
-  // Initialize the dog
-  constructor(name, species, size) {
-    this.name = name;
-    this.species = species;
-    this.size = size;
-  }
-  // Make the dog bark
-  bark() {
-    let sound = "Woof! Woof!";
-    if (this.size > 60) {
-      sound = "Grrr! Grrr!";
-    }
-    return sound;
-  }
-}
+// TODO: define the Dog class here
 
 const fang = new Dog("Fang", "boarhound", 75);
 console.log(`${fang.name} is a ${fang.species} dog measuring ${fang.size}`);

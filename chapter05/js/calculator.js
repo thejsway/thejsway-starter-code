@@ -2,25 +2,7 @@
 Calculator
 */
 
-// Return calculation result
-function calculate(leftNumber, operation, rightNumber) {
-  let result;
-  switch (operation) {
-    case "+":
-      result = leftNumber + rightNumber;
-      break;
-    case "-":
-      result = leftNumber - rightNumber;
-      break;
-    case "*":
-      result = leftNumber * rightNumber;
-      break;
-    case "/":
-      result = leftNumber / rightNumber;
-      break;
-  }
-  return result;
-}
+// TODO: complete program
 
 console.log(calculate(4, "+", 6)); // Must show 10
 console.log(calculate(4, "-", 6)); // Must show -2

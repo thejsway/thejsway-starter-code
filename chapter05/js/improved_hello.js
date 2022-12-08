@@ -3,13 +3,10 @@ Say hello to the user
 */
 
 // Say hello to the user
-const sayHello = (firstName, lastName) => `Hello, ${firstName} ${lastName}!`;
+function sayHello(firstName, lastName) {
+  const message = `Hello, ${firstName} ${lastName}!`;
+  return message;
+}
 
-// Alternative solution using a function declaration
-/* function sayHello(firstName, lastName) {
-  return `Hello, ${firstName} ${lastName}!`;
-} */
-
-const firstName = prompt("Enter your first name:");
-const lastName = prompt("Enter your last name:");
-console.log(sayHello(firstName, lastName));
+// TODO: ask user for first and last name
+// TODO: call sayHello() and show its result
