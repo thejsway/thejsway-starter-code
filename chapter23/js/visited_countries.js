@@ -8,32 +8,17 @@ const traveler = {
   countries: [
     {
       name: "Italy",
-      year: 2022
+      year: 2022,
     },
     {
       model: "Ireland",
-      color: 2021
+      color: 2021,
     },
     {
       model: "USA",
-      color: 2021
-    }
-  ]
+      color: 2021,
+    },
+  ],
 };
 
-// Send this object as JSON data to the server
-fetch("https://thejsway-server.herokuapp.com/api/countries", {
-  method: "POST",
-  headers: {
-    Accept: "application/json",
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify(traveler)
-})
-  .then(response => response.text())
-  .then(result => {
-    console.log(result);
-  })
-  .catch(err => {
-    console.error(err.message);
-  });
+// TODO: send this object as JSON data to the server
