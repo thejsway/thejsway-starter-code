@@ -2,7 +2,7 @@
 Count elements
 */
 
-const countElements = selector => document.querySelectorAll(selector).length;
+// TODO: write the countElements() function here
 
 console.log(countElements("p")); // Should show 4
 console.log(countElements(".adjective")); // Should show 3

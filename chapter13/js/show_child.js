@@ -6,15 +6,7 @@ Show a child of a node
 // "node" is the DOM object
 // "index" is the index of the child node
 const showChild = (node, index) => {
-  if (node.nodeType === document.ELEMENT_NODE) {
-    if (index >= 0 && index < node.childNodes.length) {
-      console.log(node.childNodes[index]);
-    } else {
-      console.error("Wrong index");
-    }
-  } else {
-    console.error("Wrong node type");
-  }
+  // TODO: add code here
 };
 
 // Should show the h1 node
