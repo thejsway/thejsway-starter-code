@@ -15,8 +15,10 @@
 	// Forward the web server port to access it from the host machine.
 	"forwardPorts": [80],
 	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": {},
+	// Use 'postStartCommand' to run commands each time the container starts.
 	// Start the web server for executing JS code through the host browser.
-	"postCreateCommand": "/etc/init.d/lighttpd start",
+	"postStartCommand": "/etc/init.d/lighttpd start",
 	// Configure tool-specific properties.
 	"customizations": {
 		// Add Prettier and ESLint to VS Code.

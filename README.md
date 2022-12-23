@@ -11,7 +11,7 @@ If you use Visual Studio Code, you can obtain a ready-to-use work environment by
 1. In VS Code, open the Command Palette in the `View` menu and select the **Dev Containers: Open Folder in Container...** command.
 1. Select the cloned copy of this folder and wait for the container to start.
 
-For chapters using the browser to execute JavaScript code: in the `Ports` tab of Visual Studio Code, click on the **Local Address** link to open a browser tab. Then, navigate to the desired chapter and open any HTML file to launch the corresponding JS code.
+For chapters using the browser to execute JavaScript code: in the `Ports` tab of Visual Studio Code, click on the **Local Address** link to open a browser tab. Then, navigate to the desired chapter and open any HTML file to execute the corresponding JS code.
 
 For chapters using [Node.js](https://nodejs.org) to execute JavaScript code: use the Visual Studio Code terminal.
 
