@@ -1,14 +1,22 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node.
+// More info: https://code.visualstudio.com/docs/devcontainers/create-dev-container.
 {
-	"name": "Node.js",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:16-bullseye",
+	"name": "The JavaScript Way",
+	// A Dockerfile is used instead. More info: https://containers.dev/guide/dockerfile.
+	// "image": "mcr.microsoft.com/devcontainers/javascript-node:16-bullseye",
+	"build": {
+        // Path is relataive to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    },
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	// Forward the web server port to access it from the host machine.
+	"forwardPorts": [80],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	// Start the web server for executing JS code through the host browser.
+	"postCreateCommand": "/etc/init.d/lighttpd start",
 	// Configure tool-specific properties.
 	"customizations": {
 		// Add Prettier and ESLint to VS Code.
